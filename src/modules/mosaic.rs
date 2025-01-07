@@ -47,7 +47,7 @@ impl Mosaic {
         );
     
         for input_path in paths {
-            let output_path = Path::new("output").join(input_path.file_name().unwrap());
+            let output_path = Path::new(&self.output_path).join(input_path.file_name().unwrap());
             process_image(input_path, &output_path);
             progress_bar.inc(1);
         }
