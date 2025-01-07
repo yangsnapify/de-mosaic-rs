@@ -1,3 +1,3 @@
-pub mod converter;
+pub mod mosaic;
 
-pub use converter::*;
+pub use mosaic::*;
