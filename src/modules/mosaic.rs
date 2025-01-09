@@ -42,7 +42,7 @@ impl Mosaic {
         let progress_bar = ProgressBar::new(paths.len() as u64);
         progress_bar.set_style(
             ProgressStyle::default_bar()
-                .template("{msg} [{bar:40.cyan/blue}] {pos}/{len} {percent}%")
+                .template("{msg} [{bar:30.green/grey}] {pos}/{len} {percent}%")
                 .unwrap(),
         );
     
